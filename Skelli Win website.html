@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<!-- saved from url=(0019)https://skelli.win/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+		<title>Mrs. Skelli's Blog</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<link rel="stylesheet" href="./bootstrap.css" media="screen">
+    <link rel="stylesheet" href="./custom.min.css">
+    <link rel="stylesheet" href="./all.min.css">
+	<script data-dapp-detection="">
+(function() {
+  let alreadyInsertedMetaTag = false
+
+  function __insertDappDetected() {
+    if (!alreadyInsertedMetaTag) {
+      const meta = document.createElement('meta')
+      meta.name = 'dapp-detected'
+      document.head.appendChild(meta)
+      alreadyInsertedMetaTag = true
+    }
+  }
+
+  if (window.hasOwnProperty('web3')) {
+    // Note a closure can't be used for this var because some sites like
+    // www.wnyc.org do a second script execution via eval for some reason.
+    window.__disableDappDetectionInsertion = true
+    // Likely oldWeb3 is undefined and it has a property only because
+    // we defined it. Some sites like wnyc.org are evaling all scripts
+    // that exist again, so this is protection against multiple calls.
+    if (window.web3 === undefined) {
+      return
+    }
+    __insertDappDetected()
+  } else {
+    var oldWeb3 = window.web3
+    Object.defineProperty(window, 'web3', {
+      configurable: true,
+      set: function (val) {
+        if (!window.__disableDappDetectionInsertion)
+          __insertDappDetected()
+        oldWeb3 = val
+      },
+      get: function () {
+        if (!window.__disableDappDetectionInsertion)
+          __insertDappDetected()
+        return oldWeb3
+      }
+    })
+  }
+})()</script></head>
+	<body>
+		<nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+			<div class="collapse navbar-collapse" id="navbarColor02">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item active">
+						<a class="nav-link" href="https://skelli.win/#">Home
+						<span class="sr-only">(current)</span>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="https://skelli.win/DEFCON.html">DEF CON</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="https://skelli.win/Hack-A-Sat.html">Hack-A-Sat</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="https://skelli.win/Writeups-Proof-of-Concepts.html">My Writeups and Proof of Concepts</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="https://skelli.win/CTFs.html">CTFs</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="https://skelli.win/Tracelabs.html">Tracelabs</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="https://skelli.win/Misc.html">Misc</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+		<div class="container">
+		<div class="page-header" id="banner">
+			<div class="row">
+				<div class="col-lg-12 ">
+					<div class="page-header">
+						<h1 id="containers">Skelli.win</h1>
+					</div>
+					<div class="bs-component card border-danger">
+						<div class="jumbotron">
+							<h1 class="display-3">Hi there!</h1>
+							<p class="lead">My name is Mrs Skelli, but please call me Eden. Welcome to my infosec blog. This is a place where I will share my goals, accomplishments, thoughts, and ideas for info-sec.</p>
+							<hr class="my-4">
+							<p>This blog will also include tips, resources, and other juicy things for everyone to use. I hope my experiences will also be in handy when it comes to learning new things. A little bit about myself:</p><p>
+                I am married to a wonderful man <a href="https://twitter.com/BugBot4">BugBot</a>, whom occasionally calls himself <a href= "https://h.ack.green/">Fruitf</a>. I have lots of hobbies from activism, and promoting a better community, to traveling the world. I am also really keen on photography, videogames, learning new languages and cultures, as well as meeting new people and learning and sharing experiences with them.
+                I currently speak two languages fluently (English, and Dutch)
+                One of my biggest career goal is to begin a new adventure into Application Security. I am also very fond of breaking things, and love pentesting applications and websites.
+                You can find my social media down below.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="bs-docs-section clearfix ">
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="page-header">
+							<h2 id="navbars"></h2>
+						</div>
+						<div class="card border-danger">
+							<div class="card-body">
+								<h4 class="card-title">My Major Accomplishments</h4>
+								<h6 class="card-subtitle mb-2 text-muted">You can read more indepth about some of these in the navigation bar.</h6>
+								<p class="card-text">
+								</p><ul>
+									<li>I was a DEF CON village lead for Application Security Village</li>
+									<li>I stayed up 50 hours straight for Hack-A-Sat (That took determiniation, and four 750ml espressos!)</li>
+									<li>Started a mentorship :)</li>
+									<li>Began teaching the basics of cyber security, and privacy to beginners.</li>
+									<li>Actively participating in Tracelabs, and found 21 instances of information that helped law enforcement.</li>
+									<li>Made my first working program in Python! Its a port scanner.</li>
+									<li>Made an infosec blog, to give back to the community.</li>
+								</ul>
+								<p></p>
+							</div>
+					</div>
+				</div>
+			</div>
+			<div class="bs-docs-section clearfix ">
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="page-header">
+							<h2 id="navbars">My Socials</h2>
+						</div>
+						<div class="card border-danger">
+							<div class="card-body">
+								<p class="card-text">
+                  <a href="https://twitter.com/Mrs_Skelli" class="fab fa-twitter" style="width: 100px!important;"></a>
+                  <a href="https://discord.gg/yTPvyub" class="fab fa-discord" style="width: 100px!important"></a>
+									<a href="https://github.com/Mrs-Skelli" class="fab fa-github-alt"  style="width: 100px!important"></a>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+    </div>
+    </div>
+		<script src="./jquery.min.js"></script>
+		<script src="./popper.min.js"></script>
+		<script src="./bootstrap.min.js"></script>
+		<script src="./custom.js"></script>
+
+
+</body></html>
